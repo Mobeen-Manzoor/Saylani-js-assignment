@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort an array</title>
+</head>
+<body>
+    
+
+    <script>
+        var arrays = [32, 8, 12, 65, 845,  10, 25, 4]
+        console.log(arrays)
+
+        for(var i = 0; i< arrays.length -1 ; i++){
+            for( var j=0; j< arrays.length-1; j++){
+                if(arrays[j] > arrays[j+1]){
+                var temp;
+                temp = arrays[j];
+                arrays[j] = arrays[j+1];
+                arrays[j+1] = temp;
+            }
+            }
+        }
+        console.log(arrays)
+    </script>
+
+</body>
+</html>

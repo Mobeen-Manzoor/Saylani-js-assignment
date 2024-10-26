@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.heading{
+    text-align: center;
+    margin: 20px auto;
+    color: #705C53;
+}
+.img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #705C53;
+    margin: 20px auto;
+    width: 80%;
+    
+}
+.img img{
+    width: 200px;
+    height: 200px;
+}
+.main a{
+    text-decoration: none;
+}
+.img h1{
+    color: #EDDFE0;
+    font-size: 50px;
+    
+}

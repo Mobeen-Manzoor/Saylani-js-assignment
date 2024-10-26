@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Pattern</title>
+  </head>
+  <body>
+    <!-- <img src="./asset/image-41.png" alt=""> -->
+    <script>
+
+      inputNumber = +prompt("Enter number of star you want to print")
+      var str = "*";
+      var spc = "&nbsp;&nbsp;";
+      for(let i= 1; i<= inputNumber ; i++){
+        document.write(str.repeat(i) + "</br>") 
+      }
+
+
+      for(let i= inputNumber; i>= 1 ; i--){
+        if(i === 5){continue}
+        document.write(str.repeat(i) + "</br>")  
+      }
+    </script>
+  </body>
+</html>

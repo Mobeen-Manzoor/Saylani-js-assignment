@@ -1,0 +1,22 @@
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+}
+.formInput{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: start;
+    align-items: center;
+}
+.form{
+    width: 500px;
+}
+table, th, td {
+    border: 2px solid black;
+  }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FindWord</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <p id="para">
+      Lorem ipsum dolor dolor dolor dolor dolor dolor sit amet consectetur adipisicing elit. Enim,
+      consequatur? Voluptates cumque harum illo eaque alias dolor rem dolorum
+      laudantium? Corrupti aliquam ipsam debitis commodi! Deserunt nemo veniam
+      perspiciatis esse ipsum, reiciendis, alias laboriosam a vero blanditiis
+      sed sit rerum?
+    </p>
+    <input id="inputWord" type="text" placeholder="Enter word to find in above paragraph"> <br>
+    <button onclick="result()">Find</button>
+
+    <div id="wordFinded">
+    </div>
+    <script>
+        var para = document.getElementById("para").innerText;
+        var arrays = [];
+        var word = '';
+
+        for(var i=0; i<=para.length-1; i++){
+            if(para[i]== ' '){
+                arrays.push(word)
+                word = ''
+                continue;
+            }   
+             word += para[i]
+            
+            
+        }
+        function result() {
+            var inputWord = document.getElementById("inputWord").value;
+            var wordFinded = document.getElementById("wordFinded");
+            var flag = false;
+            var count = 0;
+
+        arrays.forEach(arr => {
+            if(inputWord === arr){
+                count += 1;
+                flag = true;
+            }  
+        });
+        if(flag){
+                
+                wordFinded.innerHTML = `<span>"${inputWord}"</span> is founded in given paragraph ${count} times`
+            }
+            else{
+                wordFinded.innerHTML = `<span>"${inputWord}"</span> is not available in given paragraph`
+            }
+    }
+        
+           
+    </script>
+  </body>
+</html>

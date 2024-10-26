@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+form{
+    width: 500px;
+    height: auto;
+    background-color: blue;
+    padding: 50px;
+
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.13);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.3px);
+-webkit-backdrop-filter: blur(10.3px);
+border: 1px solid rgba(255, 255, 255, 0.28);
+}
+.main{
+    padding: 10px;
+    height: 100%;
+    background: url(./20253906_6227210.jpg);
+}
+
+#showInput{
+    margin: 40px 0px 0px 50px;
+    line-height: 60px;
+    font-size: xx-large;
+    font-weight: bold;
+}
