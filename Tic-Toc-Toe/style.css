@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #347928;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    /* height: 100vh; */
+    padding: 20px;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 400px;
+    max-height: 400px;
+    border: solid 5px #C0EBA6;
+    padding: 10px;
+}
+.box{
+    /* padding: 62px; */
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: none;
+    margin: 2px;
+    box-shadow: 0 0 5px #0f0f0f1f;
+    background-color: #FFFBE6;
+    font-size: 50px;
+    font-weight: 700;
+    /* color: #a3892c; */
+
+}
+
+.reset{
+    padding: 15px 30px;
+    background-color: #a3892c;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.start{
+    padding: 15px 30px;
+    background-color: #a3892c;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.winnerMsg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+
+}
+.hide{
+    display: none;
+}

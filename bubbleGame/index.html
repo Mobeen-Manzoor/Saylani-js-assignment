@@ -1,105 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bubble Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="box">
-
-
-            <div class="ptop">
-                <div class="element">
-                    <h2>Hit</h2>
-                    <div class="hit"></div>
-                </div>
-                <div class="element">
-                    <h2>Timer</h2>
-                    <div class="timer">60</div>
-                </div>
-                <div class="element">
-                    <h2>Score</h2>
-                    <div class="score">0</div>
-                </div>
-            </div>
-
-
-            <div class="pbtm">
-                <div class="bubble-div"></div>
-            </div>
-
+      <div class="box">
+        <div class="ptop">
+          <div class="element">
+            <h2>Hit</h2>
+            <div class="hit">0</div>
+          </div>
+          <div class="element">
+            <h2>Timer</h2>
+            <div class="timer">60</div>
+          </div>
+          <div class="element">
+            <h2>Score</h2>
+            <div class="score">0</div>
+          </div>
+          <div class="element">
+            <button class="btn" onclick="gameStart()">Start</button>
+          </div>
         </div>
+
+        <div class="pbtm">
+          <div class="bubble-div"></div>
+        </div>
+      </div>
     </div>
 
     <script>
+      var timer = 60;
+      var score = 0;
+      var timerVal;
 
-        var timer = 30;
-        var score = 0;
-
-
-        function makeBubble(){
-            var clutter = "";
-        for(var i = 1; i<=200; i++){
-            var rand = Math.floor(Math.random() * 10)
-            clutter += `<div class="bubble">${rand}</div>`
-        }
-
-        document.querySelector(".bubble-div").innerHTML = clutter
-        }
-
-
-        function runTimer(){
-            var timerVal = setInterval(function(){
-                if(timer > 0){
-                    timer--
-                    document.querySelector(".timer").textContent = timer
-                }else{
-                    document.querySelector(".bubble-div").innerHTML = `<h1>Game Over</h1>`
-                    clearInterval(timerVal)
-                }
-                
-            },1000)
-        }
-
-        function scoreCounter() {
-            score += 10;
-            document.querySelector(".score").textContent = score;
-
-        }
-
-        function checker(){
-
-            var bubbleVal = document.querySelector(".bubble-div");
-            var hitVal = document.querySelector(".hit").innerHTML;
-            console.log(hitVal)
-
-            bubbleVal.addEventListener("click", function(detail){
-                if(detail.target.textContent === hitVal){
-                    scoreCounter()
-                    makeBubble()
-                    runTimer()
-                    hitValue()
-                    checker()
-                }
-
-            })
-        }
-
-        function hitValue(){
-            var rand = Math.floor(Math.random() * 10)
-            document.querySelector(".hit").innerHTML = rand
-        }
+      function scoreCounter() {
         
+        score += 1;
+        document.querySelector(".score").innerHTML = score;
+      }
+      
+      function makeBubble() {
+          var cluster = "";
+          for (var i = 1; i <= 300; i++) {
+            var rand = Math.floor(Math.random() * 10);
+            cluster += `<div class="bubble">${rand}</div>`;
+          }
+
+          document.querySelector(".bubble-div").innerHTML = cluster;
+        }
+
+
+
+      function checker() {
+        var bubbleVal = document.querySelectorAll(".bubble");
+        var hitVal = document.querySelector(".hit").innerText;
+        // console.log("I am running")
+        bubbleVal.forEach((bubble) => {
+
+          bubble.addEventListener("click", function (detail) {
+          if (bubble.textContent == hitVal) {
+            scoreCounter();
+            makeBubble();
+            hitValue();
+            checker();
+          }
+        });
+        });
         
-        makeBubble()
-        runTimer()
-        hitValue()
+      }
+
+      
+
+    
+
+
+        function hitValue() {
+          var random = Math.floor(Math.random() * 10);
+          var hitVal = (document.querySelector(".hit").innerHTML = random);
+          // console.log(hitVal);
+        }
+
+        function runTimer() {
+          timerVal = setInterval(function () {
+            if (timer > 0) {
+              timer--;
+              document.querySelector(".timer").textContent = timer;
+            } else {
+              document.querySelector(
+                ".bubble-div"
+              ).innerHTML = `<h1>Game Over</h1> <br>
+                    <button class = "btn" onclick="gameStart()">Play Again</button>
+                    `;
+              clearInterval(timerVal);
+            }
+          }, 1000);
+        }
+
+      function gameStart() {
+        timer = 60;
+        score = 0;
+        document.querySelector(".score").innerHTML = score; 
+        clearInterval(timerVal);
+        makeBubble();
+        runTimer();
+        hitValue();
         checker()
         
-        
+      }
+
+     
     </script>
-</body>
+  </body>
 </html>
