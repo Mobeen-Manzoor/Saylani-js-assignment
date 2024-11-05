@@ -75,3 +75,21 @@ body{
 /* #winnerMsg{
     font-size: 50px;
 } */
+
+
+
+@media (max-width : 600px) {
+    .boxes{
+
+        max-width: 300px;
+        max-height: 300px;
+        
+    }
+    .box{
+        
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
+    
+    }
+}
