@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Storage </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button onclick="test()">Test</button>
+  <div class="main">
+    <div class="form">
+      <h1>Local Storage</h1>
+      <input type="text" id="name" placeholder="Student Name" >
+      <input type="text"  id="fname" placeholder="Father Name">
+      <input type="text" id="rollno" placeholder="Roll No">
+      <input type="text" id="instutite" placeholder="instutite Name">
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="address" placeholder="Address" >
+      <input type="text" id="cnic" placeholder="CNIC No">
+      <input type="file">
+      <div class="form-btn">
+        <button onclick="localStore()">Submit</button>
+        <button onclick="generateCard()">Generate Card</button>
+      </div>
+    </div>
+
+
+    <div class="card-format hide">
+    <div class="card">
+      <div class="card-img"></div>
+      <div class="card-info">
+        <div class="name info-flex">
+          <p>Name: </p>
+          <p id="show-name"></p>
+        </div>
+        <div class="fname info-flex">
+          <p>Father Name: </p>
+          <p id="show-fname"></p>
+        </div>
+        <div class="rollno info-flex">
+          <p>Roll No: </p>
+          <p id="show-rollno"></p>
+        </div>
+        <div class="instutite info-flex">
+          <p>Instutite: </p>
+          <p id="show-institute"></p>
+        </div>
+      </div>
+    </div>
+    <div class="card-bottom">
+      <img src="./assests/saylani-logo.png" alt="">
+    </div>
+  </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

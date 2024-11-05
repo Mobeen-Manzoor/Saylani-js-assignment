@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html , body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100Vh;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+    height: auto;
+    border: 2px solid black;
+    padding: 10px;
+}
+.form h1{
+    margin-bottom: 20px;
+    text-align: center;
+    color: #8DC63F;
+}
+.form input{
+    padding: 10px 5px;
+    border-radius: 10px; 
+    border: 2px solid black;
+    font-size: 20px;
+    color: #0066B3;
+
+
+}
+.form input[type = file]{
+    padding: 10px 5px;
+    border-radius: 10px; 
+    border: 2px solid black;
+    color: #0066B3;
+
+}
+
+
+.form input::placeholder{
+    /* color: black; */
+    font-size: 20px;
+    /* color: #0066B3; */
+}
+.form-btn{
+    width: 100%;
+    text-align: center;
+}
+
+.form-btn button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 5px 0px;
+    width: 100%;
+    background-color: #8DC63F;
+}
+.card-format{
+    border: 2px solid black;
+    height: 500px;
+}
+
+.card{
+    width: 500px;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    
+}
+
+.card-img{
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-image: url(./assests/shahbaz.jpg);
+    margin-top: 20px;
+    overflow: hidden;
+}
+.card-info{
+    margin-top: 30px;
+}
+
+.info-flex{
+    display: flex;
+    gap: 30px;
+}
+.info-flex p{
+    width: 100px;
+    margin: 10px 0px;
+}
+.card-bottom{
+    width: 100%;
+    text-align: center;
+}
+
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
