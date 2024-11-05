@@ -15,7 +15,7 @@ body{
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    /* height: 100vh; */
+    height: 100vh;
     padding: 20px;
 }
 .boxes{
@@ -72,3 +72,6 @@ body{
 .hide{
     display: none;
 }
+/* #winnerMsg{
+    font-size: 50px;
+} */

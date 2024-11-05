@@ -68,7 +68,6 @@ function disableBoxes(){
     }
 }
 function showWinner(winner){
-    console.log(`Winner is ${winner}`)
     msg.innerHTML = `Winner is ${winner}`
     winnerMsg.classList.remove("hide");
 
