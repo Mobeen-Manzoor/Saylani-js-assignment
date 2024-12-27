@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         signUpUsers.push(signUpUser);
         localStorage.setItem("signupUsers", JSON.stringify(signUpUsers));
         alert(`User ${signUpUser.signup_name} successfully!`);
-        
+        location.href = "./login.html";
 
     });
 }); 
