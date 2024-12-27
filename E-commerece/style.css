@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.n-navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    /* position: fixed; */
+    /* z-index: 99; */
+    /* background-color: #fd7c2c; */
+    /* width: 100vw; */
+}
+.n-nav-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 20%; */
+}
+.n-nav-items{
+    margin-left: 30px;
+    /* width: 60%; */
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.n-nav-items ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+   
+    
+
+}
+.n-nav-items ul li a{
+    /* display: flex; */
+    gap: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+    transition: 2s;
+
+}
+.n-nav-items ul li a:hover{
+    text-decoration: underline;
+
+}
+.nav-checkout{
+    width: 20%;
+}
+
+
+
+/* =============Shop Img=================== */
+.shoping-section{
+    /* width: 80%; */
+    display: flex;
+    justify-content: center;
+
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+
+
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    background-color: #FFE6C7;
+    padding: 5px 0px;
+    margin: 20px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box img{
+    width: 300px;
+    height: 300px;
+}
+
+.box a{
+    color: black;
+    text-decoration: none;
+    border: 1px solid #0a0400;
+    padding: 10px;
+    border-radius: 5px;
+    /* width: 40px !important;
+    height: 30px !important; */
+
+}
+.box a:hover{
+   cursor: pointer;
+}
+
+
+
+
+
+
+.sdga{
+    background: #FF6000;
+}
+
+
+
+/* ====================================Signup==================================?? */
+.form-section{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    background: #eec38f;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-field input{
+    width: 300px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+.form-field label{
+    font-size: 20px;
+}
+.btn button{
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-bottom: 157px;
+}
+
+
+
+
+/* ---------------------------add to cart------------------------ */
+.cartSection{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.add-to-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 250px;
+    background: #e4ab87;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.cardbox{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.detail{
+    width: 50%;
+    margin-left: 20px;
+}
+.img img{
+    width: 300px;
+    height: 290px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.remove-btn{
+    width: 30%;
+}
+.remove-btn button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 7px;
+    background-color: #FF6000;
+}
+
+
+
+/* .box{
+    border: 2px solid black;
+    width: 300px;
+    height: 350px;
+    padding: 20px 0px 15px;
+
+}
+.shop-img{
+    background-image: url(./asset/pink\ watch.jpg);
+    height: 80%;
+    background-size: ;
+    margin: 10px 0px;
+} */

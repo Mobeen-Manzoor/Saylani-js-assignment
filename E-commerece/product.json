@@ -1,0 +1,96 @@
+[
+    
+    {
+        "id": 1,
+        "img": "1.jpg",
+        "heading": "Smart watch",
+        "discription": "This is smart watch",
+        "price": "Rs 1999/-"    
+    },
+   
+    {
+        "id": 2,
+        "img": "2.jpg",
+        "heading": "Smart watch",
+        "discription": "This is smart watch",
+        "price": "Rs 1999/-"    
+    },
+   
+    {
+        "id": 3,
+        "img": "3.jpg",
+        "heading": "Smart watch",
+        "discription": "This is smart watch",
+        "price": "Rs 1999/-"    
+    },
+   
+    {
+        "id": 4,
+        "img": "4.jpeg",
+        "heading": "Smart watch",
+        "discription": "This is smart watch",
+        "price": "Rs 1999/-"    
+    },
+   
+    {
+        "id": 5,
+        "img": "5.jpg",
+        "heading": "Smart watch",
+        "discription": "This is smart watch",
+        "price": "Rs 1999/-"    
+    },
+   
+    {
+        "id": 6,
+        "img": "6.jpg",
+        "heading": "Smart watch",
+        "discription": "This is smart watch",
+        "price": "Rs 1999/-"    
+    },
+   
+    {
+        "id": 7,
+        "img": "7.jpg",
+        "heading": "Smart watch",
+        "discription": "This is smart watch",
+        "price": "Rs 1999/-"    
+    },
+   
+    {
+        "id": 8,
+        "img": "8.jpg",
+        "heading": "Smart watch",
+        "discription": "This is smart watch",
+        "price": "Rs 1999/-"    
+    },
+   
+    {
+        "id": 9,
+        "img": "9.jpg",
+        "heading": "Smart watch",
+        "discription": "This is smart watch",
+        "price": "Rs 1999/-"    
+    },
+    {
+        "id": 10,
+        "img": "10.jpg",
+        "heading": "Smart watch",
+        "discription": "This is smart watch",
+        "price": "Rs 1999/-"    
+    },
+    {
+        "id": 11,
+        "img": "11.jpg",
+        "heading": "Smart watch",
+        "discription": "This is smart watch",
+        "price": "Rs 1999/-"    
+    },
+    {
+        "id": 12,
+        "img": "12.jpg",
+        "heading": "Smart watch",
+        "discription": "This is smart watch",
+        "price": "Rs 1999/-"    
+    }
+   
+]
